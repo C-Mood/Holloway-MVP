@@ -278,6 +278,7 @@ h1 {
   gap: 16px;
   align-items: end;
   justify-content: center;
+  width: 100%;
 }
 
 .ip-item {
@@ -288,13 +289,16 @@ h1 {
 }
 
 .ip-image {
-  width: 190px;
-  height: 280px; /* taller — more book-like */
-  object-fit: cover; /* keeps full book visible */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   display: block;
   border-radius: 12px;
   background: transparent;
-  border: none; /* remove border */
+  border: none;
+  max-width: 420px;
+  margin: 0 auto 18px;
+  padding: 0;
 }
 
 .ip-product {
@@ -307,6 +311,11 @@ h1 {
   gap: 12px;
   align-items: center;
   justify-content: flex-start;
+  flex: 1 1 240px;
+  max-width: 520px;
+  text-align: center;
+  min-width: 0;
+  width: 100%;
 }
 
 .ip-product .btn {
@@ -321,6 +330,7 @@ h1 {
 
   text-align: center;
   white-space: nowrap;
+  margin-top: 14px;
 }
 
 .thumb {
@@ -607,6 +617,8 @@ h1 {
 
   .ip-product {
     width: 260px; /* controls the “card” width */
+    max-width: 360px;
+    flex-basis: 100%;
   }
 }
 
