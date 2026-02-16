@@ -232,7 +232,7 @@ h1 {
 
 .mockup-grid {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
@@ -311,7 +311,7 @@ h1 {
   gap: 12px;
   align-items: center;
   justify-content: flex-start;
-  flex: 1 1 240px;
+  flex: 1 1 320px;
   max-width: 460px;
   text-align: center;
   min-width: 0;
@@ -626,6 +626,17 @@ h1 {
 
   .ip-image {
     max-width: 280px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 6;
+  }
+  .nav-links a {
+    padding: 6px 10px;
+    font-size: 0.82rem;
   }
 }
 
